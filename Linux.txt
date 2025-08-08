@@ -1,0 +1,11 @@
+# View rules
+sudo ufw status numbered
+
+# Block Telnet
+sudo ufw deny 23/tcp
+
+# Allow SSH
+sudo ufw allow 22/tcp
+
+# Remove Telnet block
+sudo ufw delete deny 23/tcp
